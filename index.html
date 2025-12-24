@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
+    <section id="welcome">
 
         <nav>
-           <img src="./assets/FES.svg" alt="logo">
+           <img src="./assets/FES.svg" class="logo" alt="logo Image">
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -19,70 +20,92 @@
         </nav>
 
         <header>
+        <div class="row">
             <div>
                 <h1>Best place to learn frontend.</h1>
-                <p>Go from absolute beginner to pro with a simplify process.</p>
+                <p class="subheader">Go from absolute beginner to pro with a simplify process.</p>
                 <button>Start Building</button>
             </div>
 
             <figure>
                 <img src="./assets/laptop.png" alt="Homepage Image">
             </figure>
-
+        </div>
+        </header>
     </section>
 
     <main>
-        <section id="About">
+        <section id="about">
 
             <h2>About Us</h2>
+            <div class="row">   
 
-            <div>
-             <p>We are a team of experienced developers dedicated to helping you learn frontend development.</p>
-             <p>Our mission is to provide you with the best resources and support to help you succeed in your frontend development journey.</p>
+            <div class="section__description">
+
+            <div class="section__description--wrapper">
+             <p class="para">
+                We are a team of experienced developers dedicated to helping you learn frontend development.
+                Our mission is to provide you with the best resources and support to help you succeed in your frontend development journey.
+                We are a team of experienced developers dedicated to helping you learn frontend development.
+                Our mission is to provide you with the best resources and support to help you succeed in your frontend development journey.
+
+             </p>
+             <p class="para">
+                We believe in making learning accessible and fun for everyone.
+                We offer a variety of resources, including video tutorials, coding challenges, and community support.
+                We are committed to providing you with the best possible learning experience.
+                
+             </p>
             </div>
-
-            <figure>
-             <img src="./assets/about.jpg" alt="About Us Image">
-            </figure>
-
+             <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="About Us Image">
+             </figure>
+            </div>
+            </div>
         </section>
 
-        <section id="Services">
+        <section id="discord">
 
-            <h2>Our Services</h2>
+            <h2>Discord</h2>
+            <div class="row">   
+            <div class="section__description">
 
-            <figure>
+            <figure class="about__img--wrapper">
              <img src="./assets/discord.png" alt="Our Services Image">
             </figure>
 
-            <div>
-              <p>We offer a wide range of services to help you learn and succeed in frontend development.</p>
+            <div class="section__description--wrapper">
+              <p class="para">We offer a wide range of services to help you learn and succeed in frontend development.
+                Whether you are a beginner or an experienced developer, we have the resources and support you need to succeed.
+                We offer a wide range of services to help you learn and succeed in frontend development.
+              </p>
+             <p class="para">Our team of experts is here to help you every step of the way. 
+                We provide personalized guidance and support to help you achieve your goals.
+                Learn more about our services and how we can help you achieve your goals.
+            </p>
+            
             </div>
-
-            <ul>
+            <!-- <ul>
                 <li>Web Design</li>
                 <li>Responsive Design</li>
                 <li>SEO Optimization</li>
-            </ul>
+            </ul> -->
 
-            <div>   
-             <p>Our team of experts is here to help you every step of the way.</p>
-             <p>Learn more about our services and how we can help you achieve your goals.</p>
             </div>
-
-            
-
+            </div>
         </section>
 
-        <section id="Contact">
+        <section  id="contact_us">
 
             <h2>Contact Us</h2>
 
-            <div>
+            <div class="contact__description--wrapper">
 
              <p>Get in touch with us today!</p>
-             <p>We would love to hear from you! If you have any questions or would like to learn more about our services, please feel free to contact us.</p>
-             <p>Feel free to reach out to us via email or phone.</p>
+             <p >We would love to hear from you! If you have any questions or would like to learn more about our services, please feel free to contact us.
+                Feel free to reach out to us via email or phone. We look forward to hearing from you!
+             </p>
+            
             
             </div>
             
@@ -92,25 +115,26 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea type="text" placeholder="Cool website, let's get connected!" name="message"></textarea>
                 <button type="submit">Submit</button>
             </form>
+
 
 
         </section>
 
 <footer>
-    <img src="./assets/FES.svg" alt="logo">
+    <img class="footer__logo"  src="./assets/FES.svg" alt="logo">
     
-    <div>
+    <div class="footer__link">
         <ul>
-            <li><a href="#Privacy Policy">Privacy Policy</a></li>
-            <li><a href="#Terms of Service">Terms of Service</a></li>
-            <li><a href="#Cookie Policy">Cookie Policy</a></li>
+            <li  ><a href="#Privacy">Privacy</a></li>
+            <li  ><a href="#Terms of Service">Terms of Service</a></li>
+            <li  ><a href="#Cookie Policy">Cookie Policy</a></li>
         </ul>
     </div>
 
-<p>&copy; 2025 Frontend Simplify with Pious Godfearing. All rights reserved.</p>
+<p class="para">&copy; 2025 Frontend Simplify with Pious Godfearing. All rights reserved.</p>
 
 </footer>
 
