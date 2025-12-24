@@ -1,264 +1,280 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/*header styling  start*/
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    background-color: #eadcff;
-    height: calc(100vh-70px);
-   
-    
+html {
+  scroll-behavior: smooth;
 }
 
-nav{
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  height: 70px;
+  background-color: #CAFDFF;
+}
 
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 16px;
-    background-color: #cafdff;
+header {
+  background-color: #EADCFF;
+  min-height: calc(100vh - 70px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #05C7CF;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
 }
 
 
 
-.logo{
-    width: 300px;
+
+main section,
+footer {
+  padding: 48px 0;
 }
 
-ul{
-    display: flex;
-   /* list-style: none;
-    gap: 16px;*/
-    
+.row {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-li{
-    list-style: none;
-    padding-left: 16px;
-    /*color: white;
-    font-size: 16px;
-    cursor: pointer;*/ 
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
+}
+
+ul {
+  display: flex;
 }
 
 a {
-
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    font-weight: 700;
-
-    /*
-    text-decoration: none;
-    cursor: pointer;
-    */
-}
-/*header styling ended */
-
-
-/* welcome section styling started */
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1300px;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
 }
 
-h1{
-    font-size: 72px;
+li {
+  list-style-type: none;
+  padding-left: 16px;
 }
 
-.subheader{
-    font-size: 36px;
-    margin: 16px 0 24px 0;
+.logo {
+  width: 300px;
 }
 
-button{
-    padding: 12px 24px;
-    background-color: #05c7cf;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    
-     /*
-    border-radius: 4px;
-    font-weight: 700;
-    */
+.home__description,
+.home__img--wrapper {
+  width: 50%;
 }
 
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-/* welcome section styling ended */
-
-
-/* About section styling started */
-
-#about, #discord, #contact_us, #footer{
-    padding: 48px 0;
- 
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;*/
-
+.home__img--wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-#about{
-       background-color: #f8ffdc;
+.home__img {
+  width: 80%;
 }
 
-h2{
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 24px;
+/* 
+
+  ABOUT 
+  
+*/
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 24px;
 }
+
+#about {
+  background-color: #F8FFDC;
+}
+
+.section__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+
+.section__description--wrapper {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.section__description--para {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* 
+
+  DISCORD 
+  
+*/
+
+#discord {
+  background-color: #CEFEFF;
+}
+
+/* 
+
+  CONTACT 
+  
+*/
+
+#contact {
+  background-color: #DCE9FF;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+
+}
+
+input, textarea {
+  font-size: 20px;
+  margin-bottom: 24px;
+  padding: 6px 12px;
+}
+
+input {
+  height: 40px;
+}
+
+/* 
+
+  FOOTER 
+
+*/
+
+footer {
+  background-color: #AAF5FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.footer__link {
+  padding: 0 16px;
+}
+
+.footer__links {
+  margin-bottom: 32px;
+}
+
+
+
+
+/*small phones, large smartphones and tablets*/
+@media (max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .home__description{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button{
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .subheader{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul{
+        display: none;
+    }
 
 .section__description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about__img--wrapper{
-     width: 60%;
-      /*padding: 0 24px; */
-
-   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 48px;*/
-}
-
-.img{
-    width: 100%;
+        flex-direction: column;
 
 }
 
 .section__description--wrapper{
-    width: 60%;
-    /* padding: 0 24px; ; */
-    
-}
+        width: 100%; }
 
-.para, .contact__description--wrapper{
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
-
-.about__img--wrapper, .section__description--wrapper{
-    padding: 0 24px;
-
-}
-/* About section styling ended */
-
-
-/* Discord section styling started */
-#discord{
-    background-color: #cefeff;
-}
-/* Discord section styling ended */
-
-
-/* Contact section styling started */
-#contact_us{
-background-color: #ffe3dc;
-
-
-}
-
-.contact__description--wrapper{
-   /* Limits the width so the text wraps */
-  max-width: 1000px; 
-  
-  /* Centers the container itself */
-  margin: 0 auto; 
-  
-  /* Centers the text inside the container */
-  text-align: center; 
-  
-  /* Optional: adds space below the text */
-  padding: 48px;
-    
-   
- 
-
-}
-
-form{
-   /* display: flex; */
-    justify-content: center;
-   /* align-items: center;*/
-    flex-direction: column;
+  .about__img--wrapper {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
 
-input, textarea{
-    width: 100%;
-    padding: 6px 12px;
-    margin-bottom: 24px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
+  }     
 
-/* Contact section styling ended */
+#discord .section__description{
 
-/* Footer styling started */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #aaf5ff;
-    
+    flex-direction:column-reverse;
 
-   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eadcff;
-    height: 70px;
-    position: fixed;
-    bottom: 0;
-    width: 100%; */
-}
+  }
 
-.footer__logo{
-    padding: 0 24px;
-    margin: 0 auto;
-    margin-top: 24px;
-    max-width: 480px;
-}
+  footer{
+    padding: 48px 24;
+  }
+
+  .footer__logo{
+    max-width: 360px;
+  }
 
 .footer__link{
-   
-    margin-bottom: 32px;
+    padding: 0 4px;
+    font-size: 18px;
+  }
 }
 
-.footer__link a{
-    
-    color: rgb(3, 0, 0);
-    font-size: 24px;
-    font-weight: 700;
-    cursor: pointer;
-}   
-/* Footer styling ended */
+.footer__links{
+    margin-bottom: 24px;
+}
 
+
+
+
+
+
+}

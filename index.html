@@ -1,145 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <section id="welcome">
-
-        <nav>
-           <img src="./assets/FES.svg" class="logo" alt="logo Image">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <header>
-        <div class="row">
-            <div>
-                <h1>Best place to learn frontend.</h1>
-                <p class="subheader">Go from absolute beginner to pro with a simplify process.</p>
-                <button>Start Building</button>
-            </div>
-
-            <figure>
-                <img src="./assets/laptop.png" alt="Homepage Image">
-            </figure>
+  <section>
+    <nav>
+      <img class="logo" src="./assets/FES.svg" alt="" />
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="row">
+        <div class="home__description">
+          <h1>Best place to learn Frontend</h1>
+          <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
+          <button class="home__description--button">Start now</button>
         </div>
-        </header>
+        <figure class="home__img--wrapper">
+          <img class="home__img" src="./assets/laptop.png" alt="" />
+        </figure>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="section__description">
+        <div class="section__description--wrapper">
+          <p class="section__description--para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumque nisi! Eum
+            aspernatur officia aut voluptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla
+            quam numquam?
+          </p>
+          <p class="section__description--para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumque nisi! Eum
+            aspernatur officia aut voluptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla
+            quam numquam?
+          </p>
+        </div>
+        <figure class="about__img--wrapper">
+          <img src="./assets/about.jpg" alt="" />
+        </figure>
+      </div>
     </section>
 
-    <main>
-        <section id="about">
+    <section id="discord">
+      <h2>Discord</h2>
+      <div class="section__description">
+        <figure class="about__img--wrapper">
+          <img src="./assets/discord.png" alt="" />
+        </figure>
+        <div class="section__description--wrapper">
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            tempore veniam nostrum temporibus
+            doloribus, dolores inventore. Eveniet laboriosam magni blanditiis explicabo. Quidem ipsum nostrum sed iste,
+          <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            tempore veniam nostrum temporibus
+            doloribus, dolores inventore. Eveniet laboriosam magni blanditiis explicabo. Quidem ipsum nostrum sed iste,
+            saepe fugiat natus hic.</p>
+        </div>
 
-            <h2>About Us</h2>
-            <div class="row">   
+      </div>
+    </section>
 
-            <div class="section__description">
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="">
+        <span>Email</span>
+        <input type="email" placeholder="jane@example.com" />
+        <span>Message</span>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Nice website, lets connect!"></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
+  </main>
 
-            <div class="section__description--wrapper">
-             <p class="para">
-                We are a team of experienced developers dedicated to helping you learn frontend development.
-                Our mission is to provide you with the best resources and support to help you succeed in your frontend development journey.
-                We are a team of experienced developers dedicated to helping you learn frontend development.
-                Our mission is to provide you with the best resources and support to help you succeed in your frontend development journey.
-
-             </p>
-             <p class="para">
-                We believe in making learning accessible and fun for everyone.
-                We offer a variety of resources, including video tutorials, coding challenges, and community support.
-                We are committed to providing you with the best possible learning experience.
-                
-             </p>
-            </div>
-             <figure class="about__img--wrapper">
-              <img src="./assets/about.jpg" alt="About Us Image">
-             </figure>
-            </div>
-            </div>
-        </section>
-
-        <section id="discord">
-
-            <h2>Discord</h2>
-            <div class="row">   
-            <div class="section__description">
-
-            <figure class="about__img--wrapper">
-             <img src="./assets/discord.png" alt="Our Services Image">
-            </figure>
-
-            <div class="section__description--wrapper">
-              <p class="para">We offer a wide range of services to help you learn and succeed in frontend development.
-                Whether you are a beginner or an experienced developer, we have the resources and support you need to succeed.
-                We offer a wide range of services to help you learn and succeed in frontend development.
-              </p>
-             <p class="para">Our team of experts is here to help you every step of the way. 
-                We provide personalized guidance and support to help you achieve your goals.
-                Learn more about our services and how we can help you achieve your goals.
-            </p>
-            
-            </div>
-            <!-- <ul>
-                <li>Web Design</li>
-                <li>Responsive Design</li>
-                <li>SEO Optimization</li>
-            </ul> -->
-
-            </div>
-            </div>
-        </section>
-
-        <section  id="contact_us">
-
-            <h2>Contact Us</h2>
-
-            <div class="contact__description--wrapper">
-
-             <p>Get in touch with us today!</p>
-             <p >We would love to hear from you! If you have any questions or would like to learn more about our services, please feel free to contact us.
-                Feel free to reach out to us via email or phone. We look forward to hearing from you!
-             </p>
-            
-            
-            </div>
-            
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea type="text" placeholder="Cool website, let's get connected!" name="message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-
-
-
-        </section>
-
-<footer>
-    <img class="footer__logo"  src="./assets/FES.svg" alt="logo">
-    
-    <div class="footer__link">
-        <ul>
-            <li  ><a href="#Privacy">Privacy</a></li>
-            <li  ><a href="#Terms of Service">Terms of Service</a></li>
-            <li  ><a href="#Cookie Policy">Cookie Policy</a></li>
-        </ul>
+  <footer>
+    <img class="footer__logo" src="./assets/FES.svg" alt="" />
+    <div class="footer__links">
+      <a class="footer__link" href="#about">About</a>
+      <a class="footer__link" href="#discord">Discord</a>
+      <a class="footer__link" href="#contact">Contact</a>
+      <a class="footer__link" href="">Courses</a>
     </div>
-
-<p class="para">&copy; 2025 Frontend Simplify with Pious Godfearing. All rights reserved.</p>
-
-</footer>
-
-    </main>
-
+    <p>Copyright Frontend Simplified</p>
+  </footer>
 </body>
 
 </html>
